@@ -10,4 +10,6 @@ RUN pip install jupyterlab_code_formatter
 RUN jupyter serverextension enable --py jupyterlab_code_formatter
 RUN pip install black
 
+RUN jupyter lab build
+
 ENV JUPYTER_ENABLE_LAB=yes
